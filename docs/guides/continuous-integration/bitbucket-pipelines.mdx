@@ -163,7 +163,7 @@ e2e: &e2e
     - cypress
   script:
     - npm run start &
-    - npm run e2e:record -- --parallel --group UI-Chrome --ci-build-id $BITBUCKET_BUILD_NUMBER
+    - npm run --record --parallel --group UI-Chrome --ci-build-id $BITBUCKET_BUILD_NUMBER
   artifacts:
     # store any generates images and videos as artifacts
     - cypress/screenshots/**
